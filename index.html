@@ -1,23 +1,31 @@
 <!doctype html>
 <html lang="en">
+	<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+		
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/league.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				 
+				<section>
+					<h2>Energy usage at Macalester College</h2>
+					<h3>By: Brady Brunswig</h3>
+				</section>
+
+				<section><script src="js/d3_test.js"></script></section>
 			</div>
 		</div>
 
@@ -31,6 +39,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
