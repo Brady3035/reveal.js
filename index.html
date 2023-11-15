@@ -25,7 +25,10 @@
 					<h3>By: Brady Brunswig</h3>
 				</section>
 
-				<section><script type="module" src="js/d3_test.js"></script></section>
+				<section>
+					<div class="testGraph" datafig-id="testGraph" data-file="js/d3_test.html"></div>
+					
+				</section>
 			</div>
 		</div>
 
@@ -39,8 +42,10 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-				
-
+				dependencies:[
+				{src: 'https://d3js.org/d3.v4.min.js'},
+				{src: 'node_modules/reveal.js-d3js/d3js.js'},
+				],
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
