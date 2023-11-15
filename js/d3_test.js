@@ -34,4 +34,4 @@ svg.append("g")
     .call(d3.axisLeft(y));
 
 // Append the SVG element.
-container.append(svg.node());
+document.body.appendChild(svg.node());
